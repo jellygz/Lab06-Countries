@@ -1,0 +1,141 @@
+#root {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.countries {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.country {
+    width: 400px;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.country:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.title {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 1rem;
+    text-transform: uppercase;
+}
+
+img {
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.fields {
+    padding: 1rem;
+    background-color: white;
+}
+
+.fields p:last-child {
+    text-align: left;
+    margin-top: 0.5rem;
+}
+
+.field {
+    display: flex;
+    font-size: 1rem;
+    padding: 0.5rem 0;
+}
+
+.field > span {
+    flex: 1;
+    flex-basis: 50%;
+    text-align: left;
+}
+
+.field > span:first-child {
+    font-weight: bold;
+    color: #555;
+}
+
+.filter-sort {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.filter-sort > div {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.filter-sort > div > div > p {
+    margin: 0;
+    font-weight: bold;
+    color: #333;
+}
+
+.field-items {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.sort-option input {
+    margin-right: 0;
+}
+
+.sort-option label {
+    padding-left: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.sort-option input,
+.sort-option label {
+    cursor: pointer;
+}
+
+.top10-sort > div {
+    text-align: left;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+input[type="checkbox"]:hover,
+input[type="radio"]:hover,
+label:hover {
+    color: #4CAF50;
+}
+
+@media (max-width: 768px) {
+    .country {
+        width: 100%;
+    }
+
+    .filter-sort > div {
+        flex-direction: column;
+    }
+}
